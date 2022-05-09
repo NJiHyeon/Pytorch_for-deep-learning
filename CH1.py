@@ -1,3 +1,4 @@
+#0.module불러오기
 import torch
 import torch.nn as nn
 import torchvision
@@ -8,16 +9,16 @@ from sklearn.manifold import TSNE
 from matplotlib import pyplot as plt
 
 #1.여러가지 torch의 형태
-#
+#1.1
 torch.empty(5,4)
 torch.ones(3,3)
 torch.rand(5,6)     #random function
-#
+#1.2
 l = [13,4]
 r = np.array([4,56,7])
 torch.tensor(l)     #transformation tensor
 torch.tensor(r)
-#
+#1.3
 x.size()
 type(x)
 
@@ -53,5 +54,5 @@ type(y)
 x = torch.ones(1)   #단, 스칼라 형태(원소1개)
 print(x)
 x.item()
-##tensor안의 값을 숫자 형태로 불러오고 싶을 때 사용
-##loss function을 사용할 때 loss값이 스칼라 값으로 나오는데 직접 이 값을 뽑아내고 싶을 때
+#(1)tensor안의 값을 숫자 형태로 불러오고 싶을 때 사용
+#(2)loss function을 사용할 때 loss값이 스칼라 값으로 나오는데 직접 이 값을 뽑아내고 싶을 때
